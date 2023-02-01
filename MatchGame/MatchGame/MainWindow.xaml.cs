@@ -26,7 +26,7 @@ namespace MatchGame
         int matchesFound;
 
         TextBlock lastTestBlockClicked;
-        bool findingMatch = false;
+        bool findingMatch = false; 
 
         public MainWindow()
         {
