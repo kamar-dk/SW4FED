@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Button1" Content="Hej 1" 
+                Click="Button_Click" 
+                Grid.Column="0" Grid.Row="0" Margin="10,10,10,10"
+                BorderBrush="#FF5C5C5C"/>
+        <Button x:Name="Button2" Content="Hej 2" 
+                Click="Button_Click" 
+                Grid.Column="1" Grid.Row="0" Margin="50,50,50,50" 
+                Background="#FF5DE20D" BorderBrush="#FFC60E0E"/>
+        <Button x:Name="Button3" Content="Hej 3" 
+                Click="Button_Click" 
+                Grid.Column="0" Grid.Row="1" Margin="150,150,150,100"
+                BorderBrush="#FF5C5C5C"/>
+        <Button x:Name="Button4" Content="Hej 4" 
+                Click="Button_Click" 
+                Grid.Column="1" Grid.Row="1" Margin="10,200,300,50"
+                BorderBrush="#FF5C5C5C" Background="#FFD500F3"/>
     </Grid>
 </Window>
