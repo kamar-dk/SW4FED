@@ -24,6 +24,10 @@ namespace MatchGame
         DispatcherTimer timer = new DispatcherTimer();
         int tenthsOfSecondsElapsed;
         int matchesFound;
+
+        TextBlock lastTestBlockClicked;
+        bool findingMatch = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -74,9 +78,6 @@ namespace MatchGame
                 matchesFound = 0;
             }
         }
-
-        TextBlock lastTestBlockClicked;
-        bool findingMatch = false;
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
