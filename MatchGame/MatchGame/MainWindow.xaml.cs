@@ -49,5 +49,26 @@ namespace MatchGame
                 animalEmoji.RemoveAt(index);
             }
         }
+
+        TextBlock lastTestBlockClicked;
+        bool findingMatch = false;
+
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TextBlock textBlock = sender as TextBlock;
+            if (findingMatch == false)
+            {
+                textBlock.Visibility = Visibility.Hidden;
+                lastTestBlockClicked = textBlock;
+                findingMatch = true;
+            } else if (textBlock.Text == lastTestBlockClicked.Text) {
+                textBlock.Visibility |= Visibility.Hidden;
+                findingMatch = false;
+            } else
+            {
+                lastTestBlockClicked.Visibility = Visibility.Visible;
+                findingMatch = false;
+            }
+        }
     }
 }
