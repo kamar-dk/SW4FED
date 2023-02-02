@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Delopgave_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="400">
     <Grid>
+        <ListBox x:Name="lstDecadeTopNames" d:ItemsSource="{d:SampleData ItemCount=10}"/>
 
     </Grid>
 </Window>
