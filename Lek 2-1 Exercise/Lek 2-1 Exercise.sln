@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lek 2-1 Exercise 1", "Lek 2-1 Exercise\Lek 2-1 Exercise 1.csproj", "{474F73E9-FDE9-4FB1-A98F-C46047921700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lek 2-1 Exercise 1", "Lek 2-1 Exercise 1\Lek 2-1 Exercise 1.csproj", "{CD541113-BA3C-49F2-A5A8-DB890391CF19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lek 2-1 Exercise 2", "Lek 2-1 Exercise 2\Lek 2-1 Exercise 2.csproj", "{2ED45B26-39D2-4A01-B78E-AE54354BAFB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{474F73E9-FDE9-4FB1-A98F-C46047921700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{474F73E9-FDE9-4FB1-A98F-C46047921700}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{474F73E9-FDE9-4FB1-A98F-C46047921700}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{474F73E9-FDE9-4FB1-A98F-C46047921700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD541113-BA3C-49F2-A5A8-DB890391CF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD541113-BA3C-49F2-A5A8-DB890391CF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD541113-BA3C-49F2-A5A8-DB890391CF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD541113-BA3C-49F2-A5A8-DB890391CF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED45B26-39D2-4A01-B78E-AE54354BAFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED45B26-39D2-4A01-B78E-AE54354BAFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED45B26-39D2-4A01-B78E-AE54354BAFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED45B26-39D2-4A01-B78E-AE54354BAFB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Lek_2_1_Exercise</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Sailboat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sailboat.jpg" />
+  </ItemGroup>
+
+</Project>
