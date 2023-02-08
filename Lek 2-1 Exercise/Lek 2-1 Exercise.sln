@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lek 2-1 Exercise", "Lek 2-1 Exercise\Lek 2-1 Exercise.csproj", "{474F73E9-FDE9-4FB1-A98F-C46047921700}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lek 2-1 Exercise 1", "Lek 2-1 Exercise\Lek 2-1 Exercise 1.csproj", "{474F73E9-FDE9-4FB1-A98F-C46047921700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
