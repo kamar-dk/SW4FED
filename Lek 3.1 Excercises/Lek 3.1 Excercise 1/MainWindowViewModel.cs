@@ -44,7 +44,7 @@ namespace Lek_3._1_Excercise_1
             }
         }
 
-        public void AddNew()
+        public void AddNewAgent()
         {
             agents.Add(new Agent());
         }

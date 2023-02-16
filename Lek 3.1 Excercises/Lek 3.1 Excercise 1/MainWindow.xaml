@@ -43,80 +43,48 @@
                >Assignment
         </Label>
         <TextBox Height="23"
-                 Margin="100,10,0,0"
+                 Margin="100,8,0,0"
                  Name="tbxId"
                  VerticalAlignment="Top"
                  HorizontalAlignment="Left"
                  Width="58"
                  Text="{Binding Path=CurrentAgent.ID}"/>
         <TextBox Height="23"
-                 Margin="100,39,14 ,0"
+                 Margin="100,37,14 ,0"
                  Name="tbxCodeName"
                  VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
                  Text="{Binding Path=CurrentAgent.CodeName}"/>
         <TextBox Height="23"
-                 Margin="100,59,14,0"
+                 Margin="100,72,14,0"
                  Name="tbxSpeciality"
                  VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
                  Text="{Binding Path=CurrentAgent.Speciality}"/>
-        
+        <TextBox Margin="100,109,14,0" 
+                 Text="{Binding Path=CurrentAgent.Assignment}" 
+                 Height="82" 
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" />
+        <Button Height="23" Margin="100,212,0,0" 
+                VerticalAlignment="Top" HorizontalAlignment="Left"
+                Name="btnBack" Content="&lt;" Width="75"
+                Click="BtnBack_Click"/>
+        <Button Height="23" Margin="185,212,0,0" 
+                VerticalAlignment="Top" HorizontalAlignment="Left"
+                Name="btnForward"  Width="75"
+                Content="&gt;" 
+                Click="BtnForward_Click"/>
+        <Button Height="23" Margin="100,251,0,0" 
+                VerticalAlignment="Top" HorizontalAlignment="Left"
+                Width="75"
+                Name="btnAddNew" Content="Add New" 
+                Click="BtnAddNew_Click"/>
+        <ListBox ItemsSource="{Binding Path=Agents}"
+                 SelectedItem="{Binding Path=CurrentAgent}"
+                 IsSynchronizedWithCurrentItem="True"
+                 DisplayMemberPath="CodeName"
+                 Name="lbxAgents"
+                 Grid.Column="1"
+                 Margin="9"/>
     </Grid>
-    <!--<Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="100*"/>
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0"
-               Grid.Column="0"
-               Margin="3"
-               Content="_Id"/>
-        <TextBox Grid.Column="1"
-                 Grid.Row="0"
-                 Margin="3"
-                 MinWidth="40"
-                 Name="tbxId"/>
-        <Label Grid.Row="0"
-               Grid.Column="3"
-               Content="_xxx"
-               Margin="3"/>
-        <Label Grid.Row="1"
-               Grid.Column="0"
-               Content="_CodeName"
-               Margin="3"/>
-        <TextBox Grid.Row="1"
-                 Grid.Column="1"
-                 Margin="3"
-                 MinWidth="40"
-                 Name="tbxCodeName"/>
-        <Label Grid.Row="1"
-               Grid.Column="2"
-               Content="_CodeName"
-               Margin="3"/>
-        <Label Grid.Row="2"
-               Grid.Column="0"
-               Content="_Speciality"
-               Margin="3"/>
-        <TextBox Grid.Row="2"
-                 Grid.Column="1"
-                 Margin="3"
-                 MinWidth="40"
-                 Name="tbxSpeciality"/>
-        <Label Grid.Row="2"
-               Grid.Column="3"
-               Content="_Speciality"
-               Margin="3"/>
-
-
-
-
-    </Grid>-->
 </Window>
