@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -18,7 +13,7 @@ namespace Lek_3._1_Excercise_1
             agents = new ObservableCollection<Agent>();
             agents.Add(new Agent("001", "Nina", "Assassination", "Uppervolta"));
             agents.Add(new Agent("007", "James Bond", "Martinis", "North Korea"));
-            CurrentAgent = agents[0]; 
+            CurrentAgent = agents[0];
         }
 
         Agent currentAgent = null;

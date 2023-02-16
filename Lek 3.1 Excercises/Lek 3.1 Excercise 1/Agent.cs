@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Collections.ObjectModel;
-
-namespace Lek_3._1_Excercise_1
+﻿namespace Lek_3._1_Excercise_1
 {
     public class Agent
     {

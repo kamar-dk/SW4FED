@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace Lek_3._1_Excercise_1
 {
@@ -25,9 +12,10 @@ namespace Lek_3._1_Excercise_1
             InitializeComponent();
         }
 
+        #region "Eventhandlers"
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-            if(lbxAgents.SelectedIndex > 0)
+            if (lbxAgents.SelectedIndex > 0)
             {
                 lbxAgents.SelectedIndex = --lbxAgents.SelectedIndex;
             }
@@ -35,7 +23,7 @@ namespace Lek_3._1_Excercise_1
 
         private void BtnForward_Click(object sender, RoutedEventArgs e)
         {
-            if(lbxAgents.SelectedIndex < lbxAgents.Items.Count - 1)
+            if (lbxAgents.SelectedIndex < lbxAgents.Items.Count - 1)
             {
                 lbxAgents.SelectedIndex = ++lbxAgents.SelectedIndex;
             }
@@ -49,5 +37,6 @@ namespace Lek_3._1_Excercise_1
             tbxId.Focus();
         }
 
+        #endregion
     }
 }
