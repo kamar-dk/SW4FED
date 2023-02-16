@@ -5,8 +5,118 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lek_3._1_Excercise_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="500">
+    <Window.DataContext>
+        <local:MainWindowViewModel />
+    </Window.DataContext>
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="264*"></ColumnDefinition>
+            <ColumnDefinition Width="221*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Height="28" 
+               Margin="0,8,0,0" 
+               Name="labelId" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               >Id
+        </Label>
+        <Label Height="28" 
+               Margin="0,37,0,0" 
+               Name="labelCodeName" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               >CodeName
+        </Label>
+        <Label Height="28" 
+               Margin="0,72,0,0" 
+               Name="labelSpeciality" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               >Speciality
+        </Label>
+        <Label Height="28" 
+               Margin="0,107,0,0" 
+               Name="labelAssignment" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               >Assignment
+        </Label>
+        <TextBox Height="23"
+                 Margin="100,10,0,0"
+                 Name="tbxId"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Width="58"
+                 Text="{Binding Path=CurrentAgent.ID}"/>
+        <TextBox Height="23"
+                 Margin="100,39,14 ,0"
+                 Name="tbxCodeName"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Text="{Binding Path=CurrentAgent.CodeName}"/>
+        <TextBox Height="23"
+                 Margin="100,59,14,0"
+                 Name="tbxSpeciality"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Text="{Binding Path=CurrentAgent.Speciality}"/>
+        
     </Grid>
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Margin="3"
+               Content="_Id"/>
+        <TextBox Grid.Column="1"
+                 Grid.Row="0"
+                 Margin="3"
+                 MinWidth="40"
+                 Name="tbxId"/>
+        <Label Grid.Row="0"
+               Grid.Column="3"
+               Content="_xxx"
+               Margin="3"/>
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               Content="_CodeName"
+               Margin="3"/>
+        <TextBox Grid.Row="1"
+                 Grid.Column="1"
+                 Margin="3"
+                 MinWidth="40"
+                 Name="tbxCodeName"/>
+        <Label Grid.Row="1"
+               Grid.Column="2"
+               Content="_CodeName"
+               Margin="3"/>
+        <Label Grid.Row="2"
+               Grid.Column="0"
+               Content="_Speciality"
+               Margin="3"/>
+        <TextBox Grid.Row="2"
+                 Grid.Column="1"
+                 Margin="3"
+                 MinWidth="40"
+                 Name="tbxSpeciality"/>
+        <Label Grid.Row="2"
+               Grid.Column="3"
+               Content="_Speciality"
+               Margin="3"/>
+
+
+
+
+    </Grid>-->
 </Window>
