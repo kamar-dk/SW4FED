@@ -1,0 +1,14 @@
+﻿<Window x:Class="Lek_3._1_Excercise_1.NaviMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lek_3._1_Excercise_1"
+        mc:Ignorable="d"
+        Title="NaviMenu" Height="450" Width="200">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="185" Margin="29,132,0,0" Stroke="Black" VerticalAlignment="Top" Width="171" Fill="#FF2A81CC"/>
+
+
+    </Grid>
+</Window>

@@ -9,6 +9,7 @@
     <Window.DataContext>
         <local:MainWindowViewModel />
     </Window.DataContext>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="264*"></ColumnDefinition>
