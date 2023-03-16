@@ -1,0 +1,24 @@
+﻿body {
+    background-color: #ffffcc;
+    background-image: url(images/background.gif);
+    color: #330000;
+    font-family: Verdana,Arial, sans-serif;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #ffffcc;
+    min-width: 700px;
+    box-shadow: 5px 5px 5px #828282;
+}
+
+
+header {
+    background-color: #ccaa66;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
